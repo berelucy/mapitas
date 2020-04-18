@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Satellite" android:title="Satellite"  ></item>
+
+    <item android:id="@+id/Normal" android:title="Normal"></item>
+    <item android:id="@+id/Hybrid" android:title="Hybrid"></item>
+    <item android:id="@+id/Terrain" android:title="Terrain"></item>
+    <item android:id="@+id/None" android:title="None"></item>
+    <item android:id="@+id/Traffic" android:title="Traffic" android:checkable="true"  android:enabled="true"   ></item>
+    <item android:id="@+id/MyLocation" android:title="My Location en el mapa" android:checkable="true"  android:enabled="true"   ></item>
+    <item android:id="@+id/Buildings" android:title="Buildings" android:checkable="true"  android:enabled="true"   android:checked="true"></item>
+    <item android:id="@+id/indoor" android:title="Indor" android:checkable="true"  android:enabled="true"   android:checked="true"></item>
+
+
+    <menu />
+    <item android:title="Item" />
+
+</menu>
