@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         txtLatFinal= (EditText) findViewById(R.id.txtLatFin);
         txtLongFinal= (EditText) findViewById(R.id.txtLongFin);
 
-        txtLatInicio.setText("20.108108108"); txtLongInicio.setText("-101.19532");
+        txtLatInicio.setText("20.119702"); txtLongInicio.setText("-101.199831");
         //Unicentro
 
 
@@ -76,12 +76,12 @@ public class MainActivity extends AppCompatActivity {
 
         request= Volley.newRequestQueue(getApplicationContext());
     }
-
+    String key = "AIzaSyDZx8ah9aVIZ57h7k1-V2DnivCSKNkLtXA";
 
     private void webServiceObtenerRuta(String latitudInicial, String longitudInicial, String latitudFinal, String longitudFinal) {
 
         String url="https://maps.googleapis.com/maps/api/directions/json?origin="+latitudInicial+","+longitudInicial
-                +"&destination="+latitudFinal+","+longitudFinal;
+                +"&destination="+latitudFinal+","+longitudFinal+"&key="+key+"";
 
         jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override

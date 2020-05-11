@@ -107,7 +107,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
            // // Agregamos todos los puntos en la ruta al objeto LineOptions
             lineOptions.addAll(points);
             ////Definimos el grosor de las Polilíneas
-            lineOptions.width(2);
+            lineOptions.width(4);
             ////Definimos el color de la Polilíneas
             lineOptions.color(Color.BLUE);
         }
